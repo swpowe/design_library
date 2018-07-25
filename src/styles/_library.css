@@ -1,0 +1,19 @@
+#libraryMain {
+    border: 1px solid black;
+    height: 100%;
+    width: 80%;
+}
+
+#librarySub {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-content: flex-start; */
+    /* align-items: flex-start; */
+    justify-content: center;
+}
+
+.item {
+    /* flex-grow: 1; */
+    margin: 10px;
+}
