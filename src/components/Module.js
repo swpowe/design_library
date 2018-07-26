@@ -11,7 +11,7 @@ class Module extends Component {
     render(props) {
         return(
             <div id="module">
-                <a href="http://www.google.com">
+                <a href="/single">
                  <div id="iconBox"><Action /></div>
                 </a>
                 <h2>Module {this.props.name}</h2>

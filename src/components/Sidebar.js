@@ -6,6 +6,7 @@ class Sidebar extends Component {
         return (
             <div id="Sidebar">
                 Sidebar
+                <button onclick="/">Home</button>
             </div>
         );
     }

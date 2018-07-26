@@ -4,6 +4,13 @@
     width: 80%;
 }
 
+#single {
+    border: 1px solid black;
+    background-color: purple;
+    height: 100%;
+    width: 80%;
+}
+
 #librarySub {
     display: flex;
     flex-direction: row;
@@ -16,4 +23,13 @@
 .item {
     /* flex-grow: 1; */
     margin: 10px;
+}
+
+#multiple.library {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-content: flex-start; */
+    /* align-items: flex-start; */
+    justify-content: center;
 }
