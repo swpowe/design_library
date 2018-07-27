@@ -31,11 +31,6 @@ import '../styles/_library.css';
 const Library = () => (
     <Router>
         <div class="library" id="main">
-        {/* <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/single">Single</Link></li>
-        <li><Link to="/topics">Topics</Link></li>
-      </ul> */}
             <Route exact path="/" component={LibraryMultiple} />
             <Route path="/single" component={LibrarySingle} />
         </div>
@@ -50,6 +45,9 @@ class LibrarySingle extends Component {
                         <Module 
                             name="Single Module Manual 01"
                             desc="Manual 01 desc"
+                            height="600"
+                            width="800"
+                            type="image"
                         />
                     </p>
             </div>
@@ -70,6 +68,9 @@ class LibraryMultiple extends Component {
                         <Module 
                             name={module.title}
                             desc={module.desc}
+                            height="150"
+                            width="200"
+                            type="image"
                         />
                     </p>
                 ))}

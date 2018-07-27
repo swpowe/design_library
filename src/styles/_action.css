@@ -1,3 +1,12 @@
 /* .action_box {
     size: 800px 600px;
 } */
+
+/* .image_resize {
+    height: 20%;
+    width: 20%;
+} */
+
+img::after {
+    position: relative
+}

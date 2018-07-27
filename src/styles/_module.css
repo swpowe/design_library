@@ -15,7 +15,7 @@
     padding: 10px;
     margin: 5px 50px;
     opacity: .25;
-    /* object-fit: contain; */
+    /* object-fit: cover; */
 }
 
 #module {

@@ -12,7 +12,13 @@ class Module extends Component {
         return(
             <div id="module">
                 <a href="/single">
-                 <div id="iconBox"><Action /></div>
+                 <div id="iconBox">
+                    <Action 
+                        height={this.props.height} 
+                        width={this.props.width}
+                        type={this.props.type}
+                    />
+                 </div>
                 </a>
                 <h2>Module {this.props.name}</h2>
                 <h3 id="desc">{this.props.desc}</h3>
