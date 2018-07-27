@@ -30,7 +30,7 @@ import '../styles/_library.css';
 
 const Library = () => (
     <Router>
-        <div>
+        <div class="library" id="main">
         {/* <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/single">Single</Link></li>

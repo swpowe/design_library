@@ -1,35 +1,48 @@
-#libraryMain {
+/* #libraryMain {
     border: 1px solid black;
     height: 100%;
     width: 80%;
-}
+} */
 
-#single {
+/* #single {
     border: 1px solid black;
     background-color: purple;
     height: 100%;
     width: 80%;
-}
+    flex-grow: 1;
+} */
 
-#librarySub {
+/* #librarySub {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* align-content: flex-start; */
-    /* align-items: flex-start; */
+
     justify-content: center;
-}
+} */
 
 .item {
     /* flex-grow: 1; */
     margin: 10px;
+    /* width: 200px; */
+    
 }
 
 #multiple.library {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#main.library {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
     /* align-content: flex-start; */
     /* align-items: flex-start; */
-    justify-content: center;
-}

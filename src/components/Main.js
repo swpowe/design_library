@@ -8,8 +8,12 @@ class Main extends Component {
     render() {
         return(
             <div id="mainBody">
-                <Sidebar />
-                <Library />
+                <div class="sidebar">
+                    <Sidebar />
+                </div>
+                <div class="library">
+                    <Library />
+                </div>
             </div>
         );
     }
