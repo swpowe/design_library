@@ -1,6 +1,15 @@
 {
     "modules": [
-        {"title": "module 1", "desc": "This is a short description 1 coming form JSON", "background": "../assets/multipleChoice_maze_bkgd.png"},
+        {
+            "title": "module 1", 
+            "desc": "This is a short description 1 coming form JSON", 
+            "background": "../assets/multipleChoice_maze_bkgd.png",
+            "properties": {
+                "type": "multiple-choice",
+                "objective": "to find stuff"
+            },
+            "configurables": ["background", "number of hot spots", "character", "infinate number of questions"]
+        },
         {"title": "module 2", "desc": "This is a short description 2 coming form JSON"},
         {"title": "module 3", "desc": "This is a short description 3 coming form JSON"},
         {"title": "module 4", "desc": "This is a short description 4 coming form JSON"},

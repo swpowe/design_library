@@ -1,12 +1,16 @@
-/* .action_box {
-    size: 800px 600px;
-} */
+.action_box {
+    /* size: 800px 600px; */
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; */
+}
 
 /* .image_resize {
     height: 20%;
     width: 20%;
 } */
 
-img::after {
+/* img::after {
     position: relative
-}
+} */

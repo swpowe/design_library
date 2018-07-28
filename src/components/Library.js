@@ -38,6 +38,11 @@ const Library = () => (
 )
 
 class LibrarySingle extends Component {
+    state = {
+        modules: data.modules,
+        showProps: true
+    }
+
     render() {
         return(
             <div class="library" id="single">
@@ -48,6 +53,7 @@ class LibrarySingle extends Component {
                             height="600"
                             width="800"
                             type="image"
+                            showProps={this.state.showProps}
                         />
                     </p>
             </div>
@@ -57,7 +63,8 @@ class LibrarySingle extends Component {
 
 class LibraryMultiple extends Component {
     state = {
-        modules: data.modules
+        modules: data.modules,
+        showProps: false
     }
 
     render() {
@@ -71,6 +78,7 @@ class LibraryMultiple extends Component {
                             height="150"
                             width="200"
                             type="image"
+                            showProps={this.state.showProps}
                         />
                     </p>
                 ))}
