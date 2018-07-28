@@ -5,8 +5,10 @@ import {
     Link
   } from 'react-router-dom'
 import Module from '../components/Module';
+import Properties from './Properties';
 import data from '../modules.json';
 import '../styles/_library.css';
+
 
 
 // let modulesData = JSON.stringify(data);
@@ -55,6 +57,7 @@ class LibrarySingle extends Component {
                             type="image"
                             showProps={this.state.showProps}
                         />
+                        <Properties />
                     </p>
             </div>
         )
@@ -77,8 +80,12 @@ class LibraryMultiple extends Component {
                             desc={module.desc}
                             height="150"
                             width="200"
+<<<<<<< HEAD
                             type="image"
                             showProps={this.state.showProps}
+=======
+                            type="anim"
+>>>>>>> e7c418e9ce86d628879e12b27c9a87def536b117
                         />
                     </p>
                 ))}
