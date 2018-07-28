@@ -6,6 +6,7 @@
 import React, {Component} from 'react';
 import Action from '../components/Action'
 import '../styles/_module.css';
+import Properties from './Properties';
 
 
 
@@ -15,12 +16,14 @@ class Module extends Component {
 
     
 
-    handleShowProperties = (value) => {
+    handleShowProperties = (props) => {
+        console.log(props);
+        let value = props.showProps;
         if(value) {
             return(
                 <div  id="properties">
                     <h1>This one works</h1>
-                    Value is True:
+                    <Properties />
                 </div>
             )
         } else {
@@ -33,7 +36,7 @@ class Module extends Component {
             <div id="module">
                 
                  <div id="iconBox">
-                 <a href="/single">
+                 <a href={this.props.index}>
                     <Action 
                         height={this.props.height} 
                         width={this.props.width}
@@ -42,7 +45,7 @@ class Module extends Component {
                     </a>
                     {/* <div id="properties"> */}
                         <div>
-                        {this.handleShowProperties(this.props.showProps)}
+                        {this.handleShowProperties(this.props)}
                         </div>
                     {/* </div> */}
                  </div>

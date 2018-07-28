@@ -3,10 +3,11 @@ import React, {Component} from 'react';
 import '../styles/_properties.css';
 
 class Properties extends Component {
-    render() {
+    render(props) {
         return(
             <div>
-                Properties
+               {/* {this.props.title} */}
+               {/* properties component */}
             </div>
         )
     }

@@ -78,14 +78,12 @@ class LibraryMultiple extends Component {
                         <Module 
                             name={module.title}
                             desc={module.desc}
+                            index={index}
                             height="150"
                             width="200"
-<<<<<<< HEAD
                             type="image"
                             showProps={this.state.showProps}
-=======
                             type="anim"
->>>>>>> e7c418e9ce86d628879e12b27c9a87def536b117
                         />
                     </p>
                 ))}
