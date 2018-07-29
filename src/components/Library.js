@@ -30,11 +30,16 @@ import '../styles/_library.css';
 //     }
 // }
 
+
+
 const Library = () => (
     <Router>
         <div class="library" id="main">
             <Route exact path="/" component={LibraryMultiple} />
             <Route path="/single" component={LibrarySingle} />
+            {/* <Route path="/test" 
+                render={(props) => <LibrarySingle name="manual props passed module 2" />}
+            /> */}
         </div>
     </Router>
 )
@@ -44,13 +49,15 @@ class LibrarySingle extends Component {
         modules: data.modules,
         showProps: true
     }
-
-    render() {
+    
+    render(props) {
         return(
             <div class="library" id="single">
+            {/* {console.log("inside library single"+ this.props)} */}
                 <p class="item">
                         <Module 
-                            name="Single Module Manual 01"
+                            // name="Single Module Manual 01"
+                            name={this.props.name}
                             desc="Manual 01 desc"
                             height="600"
                             width="800"
